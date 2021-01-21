@@ -51,7 +51,7 @@ Further functionality: provide or reference other tools that help make an inform
 
 ## Mobile-first
 
-![StockUp - Mobile screenshot](./assets/stockUp-mobile-screenshot.png)
+![StockUp - Mobile screenshot](https://github.com/85599/Stockup.github.io/blob/master/assets/stockUp-mobile-screenshot.png)
 
 ## General
 
