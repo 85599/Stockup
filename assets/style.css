@@ -1,0 +1,226 @@
+/* general styling */
+h2 {
+    font-size: 3.0rem;
+    text-align: center;
+}
+
+h3 {
+    margin: 20px;
+    text-align: center;
+}
+
+a {
+    color: rgba(39, 174, 96, 1.0);
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: darkgreen;
+}
+
+/* General class of centered rows */
+.row.centered {
+    justify-content: center;
+}
+
+/* Elements of the header */
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background-color: white;
+    padding: 0;
+}
+
+nav.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#logoDiv {
+    flex: 0 1 auto; 
+}
+
+#logo {
+    padding-top: 15px;
+    padding-left: 15px;
+    width: 150px;   
+}
+
+.button.button-clear {
+    color: rgba(39, 174, 96, 1.0);
+    font-size: 1.7rem;
+    padding: 15px;
+    float: right;
+}
+    
+.column.collapse {
+    flex: 1 0 auto;
+    display: none;
+    flex-direction: column;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;    
+}
+
+li {
+    flex: 0 1 auto;
+    padding-top: 5px;
+    display: inline;
+}
+
+
+/* Section 1 - Search form */
+.container {
+    padding-top: 100px;
+}
+
+fieldset, form {
+    margin-bottom: 0;
+}
+
+.form-link {
+    color: white;
+    text-decoration: underline;
+}
+
+#search {
+    padding: 25px 0px;
+    border-radius: 15px;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(39, 174, 96, .9);
+    color: white;
+}
+
+input.button-black {
+    background-color: darkslategray;
+    border-color: darkslategray;
+}
+
+input[type="text"]:focus {
+    border-color: darkslategray;
+}
+
+input[type="text"] {
+    color: white;
+    border-color: whitesmoke;   
+}
+
+#buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Section 2 - Results: stock chart and performance data */
+#results {
+    padding: 30px 0px;
+}
+
+#charts {
+    background-color: rgba(39, 174, 96, .9);
+    border-radius: 15px;
+    justify-content: space-between;
+}
+
+#stock-info {
+    padding: 15px;
+    color: black;
+}
+
+td, .td {
+    color: white;
+    font-weight: bold;
+}
+
+/* Section 3 - Search results: latest news */
+.newshead {
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 0px;
+}
+
+#newshead {
+    text-align: center;
+}
+
+.articles {
+    justify-content: flex-start;
+}
+
+#news-items {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.row .news-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgba(39, 174, 96, 1.0);
+    margin: 10px 0px;
+    border-radius: 15px;
+}
+
+.row .source {
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 0px;
+}
+
+.row .news-link {
+    padding: 10px;
+    margin-bottom: 0px;
+}
+
+a[id*="news-item"] {
+    color: black;
+    font-size: 14px;
+}
+
+/* Section 4 - Contacts */
+#contacts {
+    align-items: center;
+    justify-content: center;
+}
+
+#section-four ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    font-weight: bold;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Larger than tablet screen */
+@media (min-width: 80.0rem) {  
+    h2, h3 {font-size: 4.0rem;}
+    #logoDiv {flex: 1 0 25%;}
+
+    nav ul {flex: 0 1 auto;
+        display: flex;
+        flex-direction: row;
+        align-items: space-evenly;
+        margin-top: 15px;}
+    
+        li {padding-top: 5px;
+        margin-right: 20px;
+        display: inline;}
+}

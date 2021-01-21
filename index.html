@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StockUp</title>
+    <script src= "https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script> 
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    <link rel="stylesheet" type="text/css" href="./assets/style.css">
+</head>
+<body>
+    <header>
+        <!-- Navigation-->
+        <nav class="row">
+            <div class="column column-30" id="logoDiv">
+                <img id="logo" src="./assets/stockuplogo-sm.png" alt="StockUp logo">
+            </div>
+            <!-- Toggle button for the collapsible menu -->
+            <div class="column column-20">
+                <button class="button button-clear" id="toggleBtn" aria-controls="#navToggle" aria-expanded="true" aria-label="Toggle navigation">
+                    <span id="nav-toggler">Menu</span>
+                </button>    
+            </div>
+            <!-- Collapsible menu -->
+            <div class="column collapse" id="navToggle">
+                <ul id="header-ul">
+                    <li><strong>Investment tips for the beginner</strong></li>
+                    <li><a href="#section-one" id="nl1" class="nav-link">New search</a></li>
+                    <li><a href="#section-two" id="nl2" class="nav-link">Investment details</a></li>
+                    <li><a href="#section-three" id="nl3" class="nav-link">Recent news</a></li>
+                    <li><a href="#section-four" id="nl4" class="nav-link">Contacts</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- Section 1 - Search Form -->
+        <section id="section-one">
+            <form class="row">
+                <fieldset class="column">
+                    <div class="row centered">
+                        <h2>Search for the Most Current Investment Information</h2>
+                    </div>
+                    <div class="row" id="search">
+                        <div class="column column-80" id="mainFields">
+                            <label for="nameField">Stock symbol (<a class="form-link" href="https://www.dogsofthedow.com/stock-symbols-list.htm">reference list</a>)</label>
+                            <input type="text" placeholder="i.e. AAPL, FB, or REGI" id="nameField">
+                        </div>
+                        <div class="column column-80" id="buttons">
+                            <input id="searchBtn" class="button-black" type="submit" value="Search">
+                        </div>  
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+        <!-- Section 2 - Stock data -->
+        <section id="section-two">
+            <div class="row" id="results">
+                <div class="column">
+                    <h3>Stock performance data</h3>
+                </div>
+            </div>
+            <!-- Chart and stock info section -->
+            <div class="row" id="charts">
+                <!-- Canvas API element -->
+                <div class="column" id="chart-container">
+                    <canvas id="myChart"></canvas>
+                </div>
+                <!-- Basic stock information table -->
+                <div class="column" id="stock-info">
+                <table>
+                    <thead>
+                        <tr><th class="td"></th>
+                            <td></td></tr>
+                    </thead>
+                    <tbody>
+                        <tr id="row1"><th>50-day avg: <br> 200-day avg: </th>
+                            <td></td></tr>
+                        <tr id="row2"><th>Previous close: <br> Open:</th>
+                            <td></td></tr>
+                        <tr id="row3"><th>Daily High <br> Daily Low:</th>
+                            <td></td></tr>
+                        <tr id="row4"><th>52wk High <br> 52wk Low:</th>
+                            <td></td></tr>
+                        <tr id="row5"><th>Shares: <br> Earnings per share:</th>
+                            <td></td></tr>
+                        <tr id="row6"><th>Price/earnings ratio: <br> Market capitalization:</th>
+                            <td></td></tr>     
+                    </tbody>
+                    </table>  
+                </div>
+            </div>
+        </section>
+        <!-- Section 3 - Financial news -->
+        <section id="section-three">
+            <div class="row newshead" id="news">
+                <div class="column" id="newshead">   
+                    <h3>Latest news about <span id="companyName"></span></h3>
+                </div>
+            </div>
+            <div class="row articles">
+                <!-- Articles are loaded into this section -->
+                <div class="column" id="news-items">
+                </div>
+            </div>
+        </section>
+        <!-- Section 4 - Contributor contacts -->
+        <section id="section-four">
+            <div class="row" id="contacts">
+                <div class="column column-60 contributors">
+                <img src="./assets/stockuplogo-01.jpg" alt="StockUp logo">
+                <ul>
+                    <li><strong>Contributors:</strong></li>
+                    <li class="contributor"><a href="https://github.com/85599">Khushal Jain</a></li>
+                </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="row">
+            <p>2021 - Made with love by <br> <a href="https://github.com/85599/Stockup.github.io">Socially Distanced Campers</a></p>
+    </footer>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./assets/script.js"></script>
+</body>
+</html>
