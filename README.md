@@ -1,4 +1,4 @@
-# Stockup.github.io
+# # [Stockup](https://85599.github.io/Stockup.github.io/) :yen: :dollar: :pound: :euro: :moneybag: :money_with_wings:
 
 ### Simplest Investment Research
 
